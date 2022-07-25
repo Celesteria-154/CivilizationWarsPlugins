@@ -1,0 +1,6 @@
+name: CivilizationWarsPlugins
+version: '${project.version}'
+main: com.celeste.civilizationwarsplugins.CivilizationWarsPlugins
+api-version: 1.18
+authors: [ Celeste ]
+description: Spigot  CivilizationWars Plugins
