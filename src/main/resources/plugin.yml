@@ -4,3 +4,10 @@ main: com.celeste.civilizationwarsplugins.CivilizationWarsPlugins
 api-version: 1.18
 authors: [ Celeste ]
 description: Spigot  CivilizationWars Plugins
+commands:
+  cwp:
+    description: CivilizationWarsPlugins command
+    usage: |
+           /<command> test - test command.
+    permission: CivilizationWarsPlugins.command
+    permission-message: You don't have the permission "<permission>".
