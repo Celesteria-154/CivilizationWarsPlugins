@@ -22,3 +22,12 @@ map   - マップをなんかします(製作途中,Nullエラー)
 Oppai - Oppai を表示します(メイン)
 test  - テストメッセージをプレイヤーに送信します
 ```
+
+##現段階(present stage)
+メッセージ系死んでるけど、コマンドの土台できた  
+もしかしたら使うだろうものもある程度ひっぱれるようにした  
+えらい  
+  
+Messe-zi kei sinderu kedo , komandono dodai dekita  
+mosikasitara tukau darou monomo aruteido hippareruyou ni sita.  
+eroi  
