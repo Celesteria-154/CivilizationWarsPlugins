@@ -1,1 +1,6 @@
 oppai: true
+map:
+  custom_world:
+  desert_snowy:
+  experimental:
+  experimental_gen:

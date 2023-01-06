@@ -2,13 +2,12 @@ package com.celeste.civilizationwarsplugins.command;
 
 import com.celeste.civilizationwarsplugins.Message;
 import com.celeste.civilizationwarsplugins.member.Member;
-import org.bukkit.entity.Player;
 
 /**
- * テストコマンドクラス
+ * 全角出力テスト用コマンド
  */
-public class TestCommand extends CwpSubCommand {
-    private static final String COMMAND_NAME = "test";
+public class OppaiCommand extends CwpSubCommand{
+    private static final String COMMAND_NAME = "oppai";
     private static final String PERMISSION_NODE = "cwp." + COMMAND_NAME;
 
     /**
@@ -47,7 +46,7 @@ public class TestCommand extends CwpSubCommand {
     @Override
     public boolean runCommand(Member sender, String label, String[] args) {
         Member Sender = sender;
-        Sender.sendMessage("Successful command execution!");
+        Sender.sendMessage("おっぱい");
 
         return true;
     }
@@ -57,7 +56,7 @@ public class TestCommand extends CwpSubCommand {
      * @return コマンド種別
      */
     @Override
-    public CommandType getCommandType() {
-        return CommandType.USER;
+    public CwpSubCommand.CommandType getCommandType() {
+        return CwpSubCommand.CommandType.USER;
     }
 }

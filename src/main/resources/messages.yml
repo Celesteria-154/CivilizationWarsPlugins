@@ -1,1 +1,16 @@
-test: 'test'
+infoPrefix: '&f[&aLC&f]'
+errorPrefix: '&f[&cLC&f]'
+
+cmdmsgReload: 'CivilizationWarsの設定を再読み込みしました。'
+
+errmsgIngame: 'このコマンドはゲーム内からしか実行できません。'
+errmsgCommand: 'コマンドの指定が正しくありません。'
+
+usageReload: '&6/%label% reload &7- config.ymlの再読み込みをします。'
+usageHelp: '&6/%label% help [user|mod|admin] [page] &7- ヘルプを表示します。'
+
+usageTop: '&e----- &6CivilizationWars %type% command (&c%num%&6/&c%max%&6) &e-----'
+usageFoot: '&e-----------------------------------------'
+usageNoticeNextPage: '&6次のページを見るには、&c/%label% help %type% %next%&6 と実行してください。'
+
+

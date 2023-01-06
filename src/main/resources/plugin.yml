@@ -1,13 +1,26 @@
-name: CivilizationWarsPlugins
+name: ${project.name}
 version: '${project.version}'
 main: com.celeste.civilizationwarsplugins.CivilizationWarsPlugins
 api-version: 1.18
 authors: [ Celeste ]
 description: Spigot  CivilizationWars Plugins
+
 commands:
   cwp:
     description: CivilizationWarsPlugins command
     usage: |
            /<command> test - test command.
+           /<command> help - help command.
+           /<command> map - select map.(experimentally.)
     permission: CivilizationWarsPlugins.command
     permission-message: You don't have the permission "<permission>".
+
+permissions:
+  cwp.command:
+    description: cwp command permission
+    default: true
+  cwp.*:
+    children:
+      cwp.help: true
+      cwp.test: true
+    description: permissions of the option command

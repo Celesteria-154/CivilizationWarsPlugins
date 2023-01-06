@@ -1,13 +1,27 @@
 package com.celeste.civilizationwarsplugins.util;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.util.Map;
+
 import org.jetbrains.annotations.NotNull;
 import org.yaml.snakeyaml.Yaml;
 
-import java.io.*;
-import java.util.Map;
-
 public class YamlConfig extends YamlSection {
-    //InputStreamからYamlConfigをロードする
+
+    /**
+     * InputStreamからYamlConfigをロードする
+     *
+     * @param stream InputStream
+     * @return ロードされたYamlConfig
+     * @throws IOException InputStreamの入力がyamlとして解析できない場合など
+     */
     public static YamlConfig load(InputStream stream) throws IOException {
 
         YamlConfig config = new YamlConfig();
@@ -25,7 +39,13 @@ public class YamlConfig extends YamlSection {
         return config;
     }
 
-    //ReaderからYamlConfigをロードする
+    /**
+     * ReaderからYamlConfigをロードする
+     *
+     * @param reader Reader
+     * @return ロードされたYamlConfig
+     * @throws IOException Readerの入力がyamlとして解析できない場合など
+     */
     public static YamlConfig load(Reader reader) throws IOException {
 
         YamlConfig config = new YamlConfig();
@@ -43,7 +63,12 @@ public class YamlConfig extends YamlSection {
         return config;
     }
 
-    //FileからYamlConfigをロードする
+    /**
+     * FileからYamlConfigをロードする
+     *
+     * @param file File
+     * @return ロードされたYamlConfig（ロードに失敗した場合は空のYamlConfigが返される）
+     */
     public static @NotNull YamlConfig load(File file) {
 
         // 対象ファイルが存在しない場合やからっぽの場合は、からっぽのYamlConfigを返す
@@ -60,7 +85,12 @@ public class YamlConfig extends YamlSection {
         return new YamlConfig();
     }
 
-    //保存する
+    /**
+     * 保存する
+     *
+     * @param file 保存先
+     * @throws IOException 保存に失敗した場合など
+     */
     public void save(File file) throws IOException {
 
         Yaml yaml = new Yaml();

@@ -5,10 +5,10 @@ import com.celeste.civilizationwarsplugins.member.Member;
 import org.bukkit.entity.Player;
 
 /**
- * テストコマンドクラス
+ * まだ動かない、ぬるぽ
  */
-public class TestCommand extends CwpSubCommand {
-    private static final String COMMAND_NAME = "test";
+public class MapCommand extends CwpSubCommand{
+    private static final String COMMAND_NAME = "map";
     private static final String PERMISSION_NODE = "cwp." + COMMAND_NAME;
 
     /**
@@ -30,15 +30,26 @@ public class TestCommand extends CwpSubCommand {
     }
 
     /**
+     * コマンドの種別を取得
+     * @return コマンド種別
+     */
+    @Override
+    public CwpSubCommand.CommandType getCommandType() {
+        return CwpSubCommand.CommandType.USER;
+    }
+
+    /**
      * @param sender コマンド実行者
      * @param label 実行ラベル
      */
+
     @Override
     public void sendUsageMessage(Member sender, String label) {
         sender.sendMessage(Message.usageTest(label));
     }
 
     /**
+     * テスト用
      * @param sender コマンド実行者
      * @param label 実行レベル
      * @param args コマンド引数
@@ -48,16 +59,6 @@ public class TestCommand extends CwpSubCommand {
     public boolean runCommand(Member sender, String label, String[] args) {
         Member Sender = sender;
         Sender.sendMessage("Successful command execution!");
-
         return true;
-    }
-
-    /**
-     * コマンドの種別を取得
-     * @return コマンド種別
-     */
-    @Override
-    public CommandType getCommandType() {
-        return CommandType.USER;
     }
 }
