@@ -1,9 +1,9 @@
 # CivilizationWarsPlugins
 
-本プラグインは単体で使用するものではありません。
-[CivilizationWarsGame](https://github.com/iruru1111/CivilizationWarsGameSystem)と一緒に利用してください。
+本プラグインは単体で使用するものではありません。  
+[CivilizationWarsGame](https://github.com/iruru1111/CivilizationWarsGameSystem)と一緒に利用してください。  
 
-This plug-in is not intended to be used by itself.
+This plug-in is not intended to be used by itself.  
 Use with [CivilizationWarsGame](https://github.com/iruru1111/CivilizationWarsGameSystem).
 
 ## 動作環境(Operating environment)
