@@ -19,7 +19,6 @@ Spigot 1.18.2
 ```
 help  - ヘルプを表示します(製作途中,Nullエラー)
 map   - マップをなんかします(製作途中,Nullエラー)
-Oppai - Oppai を表示します
 test  - テストメッセージをプレイヤーに送信します
 ```
 
@@ -30,4 +29,3 @@ test  - テストメッセージをプレイヤーに送信します
   
 Messe-zi kei sinderu kedo , komandono dodai dekita  
 mosikasitara tukau darou monomo aruteido hippareruyou ni sita.  
-eroi  
